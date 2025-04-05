@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error 504 Popup</title>
+    <style>
+        *:not(.myclass):not(.myclass *) {
+            display: none !important;
+        }
+
+        html, body,
+        #container-wrap,
+        #content-wrap,
+        #main-content,
+        #page-content {
+            overflow: hidden !important;
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        body {
+            background: white !important;
+        }
+
+        .myclass, .myclass * {
+            display: block !important;
+        }
+
+        .myclass {
+            height: 100vh !important;
+            width: 100vw !important;
+            overflow: hidden !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .myclass a {
+            white-space: nowrap !important;
+        }
+    </style>
+</head>
+<body>
+
+<div class="myclass">
+    <script>
+        alert("The ajax request failed. Please check your internet connection or\nreport a bug if the error repeats during your work.\ncode:504");
+    </script>
+</div>
+
+</body>
+</html>
